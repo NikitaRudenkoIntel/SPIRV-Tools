@@ -123,6 +123,9 @@ spv_ext_inst_type_t spvExtInstImportTypeGet(const char* name) {
   if (!strcmp("OpenCL.DebugInfo.100", name)) {
     return SPV_EXT_INST_TYPE_OPENCL_DEBUGINFO_100;
   }
+  if (!strcmp("SPIRV.debug", name)) {
+    return SPV_EXT_INST_TYPE_OPENCL_DEBUGINFO_100;
+  }
   // ensure to add any known non-semantic extended instruction sets
   // above this point, and update spvExtInstIsNonSemantic()
   if (!strncmp("NonSemantic.", name, 12)) {
